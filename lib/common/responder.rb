@@ -5,7 +5,7 @@ require "common/responders/nested_association_responder"
 require "common/responders/pagination_responder"
 require "common/responders/sort_responder"
 require "common/responders/version"
-require "lib/responders/"
+require "responders/flash_responder"
 
 module Common
   class Responder
