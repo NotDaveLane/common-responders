@@ -1,3 +1,4 @@
+require "action_controller/responder"
 require "common/responders/display_resource_on_put_delete_responder"
 require "common/responders/http_cache_responder"
 require "common/responders/ids_filter_responder"
@@ -8,7 +9,7 @@ require "common/responders/version"
 require "responders/flash_responder"
 
 module Common
-  class Responder
+  class Responder < ActionController::Responder
     prepend Common::Responders::PaginationResponder
     prepend Common::Responders::IdsFilterResponder
     prepend Common::Responders::SortResponder
